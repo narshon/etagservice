@@ -1,0 +1,272 @@
+<?php
+
+// uncomment the following to define a path alias
+// Yii::setPathOfAlias('local','path/to/local-folder');
+
+// This is the main Web application configuration. Any writable
+// CWebApplication properties can be configured here.
+
+ //include("http://uat/Modules_and_extensions/CDbRedmineLogRoute.php");
+ 
+return array(
+        
+	'theme'=>THEME,
+	'basePath'=>BASE_PATH,
+	'defaultController'=>DEFAULTCONTROLLER,
+	'name'=>NAME,
+
+	// preloading 'log' component
+	'preload'=>array('log'),
+        'onBeginRequest' => create_function('$event', 'return ob_start("ob_gzhandler");'),  
+        'onEndRequest' => create_function('$event', 'return ob_end_flush();'),  
+
+	// autoloading model and component classes
+	'import'=>array(
+		'application.models.*',
+		'application.components.*',
+                'application.modules.auditTrail.models.AuditTrail',
+
+                'application.modules.dss.models.*',
+                'application.modules.lab.models.*',
+                'application.modules.wards.models.*',
+                'application.modules.maternity.models.*',
+                'system.logging.CAuthenticationLogger',  
+                'system.extensions.*',
+                'system.extensions.configuration.components.*',
+                'system.extensions.configuration.models.*',
+                'application.extensions.EScrollableGridView.*',
+	),
+
+	'modules'=>array(
+		// uncomment the following to enable the Gii tool
+		
+		'gii'=>array(
+			'class'=>'system.gii.GiiModule',
+			'password'=>GII_PASSWORD,
+			'generatorPaths'=>array(
+                            'application.gii',   // a path alias
+            ),
+		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
+			'ipFilters'=>array('127.0.0.1','::1'),
+		),
+            //configuration module....
+	     'configuration'=>array(
+                       'class'=>'system.extensions.configuration.ConfigurationModule',
+               ), 
+			'dss',
+			'lab',
+			'wards',
+            'maternity',
+            'auditTrail'=>array(),
+			
+			'importcsv'=>array(
+                          'path'=>'/controlmanagement/csvimports/', // path to folder for saving csv file and file with import params
+                ),
+	),
+
+	// application components
+	'components'=>array(
+		'user'=>array(
+			// enable cookie-based authentication
+			'allowAutoLogin'=>true,
+		),
+        'widgetFactory' => array(
+        'widgets' => array(
+            'CLinkPager' => array(
+                'cssFile' => '/kidms/css/pager.css',
+            ),
+        ),
+        ),
+		'twitter' => array(
+                        'class' => 'application.extensions.twitter.VGTwitter', // path to the twitter extension
+                        'username' => 'narshon', // login name, this is not required all the time but most api calls need this set
+                        'apiCallType' => 'statuses/user_timeline', // the api call to perform, the default is set to statuses/user_timeline
+                        'password' => 'password123@$', // password for the twitter account
+                        'authenticate' => true, // if the twitter api call needs authentication then this must be set to true since by default it is set to false
+                        'format' => 'rss', // default is xml so we will configure this as rss for this example
+                        'postParams' => array( 'count' => 2 ) // we want only the first two results, meaning tweets
+                        ),
+		'fusioncharts' => array(
+                    'class' => 'ext.fusioncharts.fusionCharts',
+                 ),
+                 'clientScript'=>array(
+                    //'class'=>'ext.minScript.components.ExtMinScript',
+                        //'optionName'=>'optionValue',
+                     
+                  ),
+            
+		// uncomment the following to enable URLs in path-format
+		
+		/*'urlManager'=>array(
+			'urlFormat'=>'path',
+			'showScriptName'=>false,
+			'rules'=>array(
+				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
+				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+			),
+		),
+                 * 
+                 */
+
+		/*'cache' => array (
+                    'class' => 'CMemCache',
+                    'servers'=>array(
+                        array(
+                            'host'=>'localhost',
+                            'port'=>11211,
+                        ),
+                    ),
+                ),
+		
+		*/
+           /*     'cache'=>array(
+                'class'=>'system.caching.CFileCache',
+                ),*/
+
+
+		// uncomment the following to use a MySQL database
+		
+		'db'=>array(
+			'connectionString' => 'mysql:host='.DB_HOST.';dbname='.DB_DATABASE.';port=3306',
+			'emulatePrepare' => true,
+			'username' => DB_USER,
+			'password' => DB_PASSWORD,
+			'charset' => 'utf8',
+                        'schemaCachingDuration'=>3600,
+                        'queryCachingCount'=>1000,
+                        'queryCachingDuration'=>3600
+		),
+                'db_test'=>array(
+                        'class'=>'CDbConnection',
+			'connectionString' => 'mysql:host='.DB_HOST.';dbname='.DB_DATABASE.'_test;port=3306',
+			'emulatePrepare' => true,
+			'username' => DB_USER,
+			'password' => DB_PASSWORD,
+			'charset' => 'utf8',
+		),
+		'dblog'=>array(
+                        'class'=>'CDbConnection',
+			'connectionString' => 'mysql:host='.DBLOG_HOST.';dbname='.DBLOG_DATABASE,
+			'emulatePrepare' => true,
+			'username' => DBLOG_USER,
+			'password' => DBLOG_PASSWORD,
+			'charset' => 'utf8',
+                        'schemaCachingDuration'=>3600,
+                        'queryCachingCount'=>1000,
+                        'queryCachingDuration'=>3600
+			//'tablePrefix' => 'tbl_',
+		),
+		'metadb'=>array(
+                        'class'=>'CDbConnection',
+			'connectionString' => 'mysql:host='.METADB_HOST.';dbname='.METADB_DB.';port=3306',
+                        'schemaCachingDuration' => 3600,
+			'emulatePrepare' => true,
+			'username' => METADB_USER,
+			'password' => METADB_PASS,
+			'charset' => 'utf8',
+                        'schemaCachingDuration'=>3600,
+                        'queryCachingCount'=>1000,
+                        'queryCachingDuration'=>3600
+			//'tablePrefix' => 'tbl_',
+		),
+                'kunena'=>array(
+                        'class'=>'CDbConnection',
+			'connectionString' => 'mysql:host=localhost;dbname=kunena;port=3306',
+			'emulatePrepare' => true,
+			'username' => DB_USER,
+			'password' => DB_PASSWORD,
+			'charset' => 'utf8',
+                        'schemaCachingDuration'=>3600,
+                        'queryCachingCount'=>1000,
+                        'queryCachingDuration'=>3600
+		),
+                 'db_schema'=>array(
+                        'class' => 'CDbConnection',
+                        'connectionString' => 'mysql:host=localhost;dbname=information_schema',
+                        'emulatePrepare' => true,
+                        'username' => 'root',
+                        'password' => '',
+                        'charset' => 'utf8',
+                        'schemaCachingDuration'=>3600,
+                        'queryCachingCount'=>1000,
+                        'queryCachingDuration'=>3600
+                ),
+		'errorHandler'=>array(
+			// use 'site/error' action to display errors
+                'errorAction'=>'site/error',
+                ),
+		'log'=>array(
+			'class'=>'CLogRouter',
+			'routes'=>array(
+				array(
+					'class'=>'CFileLogRoute',
+					'levels'=>'error, warning',
+				),
+                                /*  array(
+                                    'class'=>'CEmailLogRoute',
+                                    'levels'=>'error',
+                                    'emails'=>array('nngao@kemri-wellcome.org'),
+                                  ), 
+                                * 
+                                */
+                              /*
+                                array(
+                                    'class'=>'system.logging.CDbRedmineLogRoute',
+                                    'levels'=>'error',
+                                    'connectionID'=>'dblog',
+                                    'enabled'=>true,
+                                    'logTableName'=>'issues',
+                                    "autoCreateLogTable"=>false,
+                                ),
+                               * 
+                               */
+                             /*
+                                array(
+                                    'class'=>'CWebLogRoute',
+                                ),
+                              * 
+                              */
+				// uncomment the following to show log messages on web pages
+				/*
+				array(
+					'class'=>'CWebLogRoute',
+				),
+				*/
+			),
+		),
+            
+           
+	),
+       /*'controllerMap'=>array(
+                'min'=>array(
+                        'class'=>'ext.minScript.controllers.ExtMinScriptController',
+                        //'optionName'=>'optionValue',
+                ),
+        ), */
+	// application-level parameters that can be accessed
+	// using Yii::app()->params['paramName']
+	'params'=>array(
+		// this is used in contact page
+		'adminEmail'=>ADMIN_EMAIL,
+                
+		'domainUrl'=>DOMAIN_URL,
+		
+		'logMailRecipient'=>LOG_MAIL_RECIPIENT,
+		'projectID'=>PROJECT_ID,
+		'redmine_user_id'=>REDMINE_USER_ID,
+		
+		'domain'=>REMOTE_DOMAIN,
+		'user'=>REMOTE_USER,
+		'password'=>REMOTE_PASSWORD,
+		'database'=>REMOTE_DATABASE,
+		'defaultPageSize'=>10,
+            
+                //other db tables
+                'other_db'=>array(
+                                    'db_name'=>'kunena',
+                                    'tables'=>array('c7z4w_kunena_categories','c7z4w_kunena_messages','c7z4w_kunena_messages_text','c7z4w_kunena_topics')
+                                 )
+	),
+
+);

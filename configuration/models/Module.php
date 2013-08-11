@@ -1,0 +1,189 @@
+<?php
+
+/**
+ * This is the model class for table "meta_module".
+ *
+ * The followings are the available columns in table 'meta_module':
+ * @property integer $id
+ * @property string $module_name
+ * @property string $description
+ *
+ * The followings are the available model relations:
+ * @property Model[] $models
+ */
+class Module extends MetaActiveRecord
+{
+
+/**
+ * @var integer id
+ * @soap
+*/
+public  $id;
+
+/**
+ * @var string module_name
+ * @soap
+*/
+public  $module_name;
+
+/**
+ * @var string description
+ * @soap
+*/
+public  $description;
+
+
+private $datahelper;
+
+public $change_no;
+
+public $change_comments;
+         
+         /*
+         * Constructor - setting up datahelper object
+         *
+         */
+         public function __construct($scenario = 'insert',$dh=true){
+               if($dh)
+                $this->datahelper = new DataHelper('Module','meta_module');
+                
+                parent::__construct($scenario);
+         }
+         
+	/**
+	 * Returns the static model of the specified AR class.
+	 * @return Module the static model class
+	 */
+	public static function model($className=__CLASS__)
+	{
+		return parent::model($className);
+	}
+
+	/**
+	 * @return string the associated database table name
+	 */
+	public function tableName()
+	{       
+		return 'meta_module';
+	}
+
+	/**
+	 * @return array validation rules for model attributes.
+	 */
+	public function rules()
+	{
+		// NOTE: you should only define rules for those attributes that
+		// will receive user inputs.
+                return array_merge($this->datahelper->getModelRules(),$this->datahelper->getModelSkipPatterns()); 
+		
+	}
+
+	/**
+	 * @return array relational rules.
+	 */
+	public function relations()
+	{
+		
+		 return $this->datahelper->getModelRelations();
+					
+	}
+
+	/**
+	 * @return array customized attribute labels (name=>label)
+	 */
+	public function attributeLabels()
+	{
+		
+          			         			         			                  
+         return $this->datahelper->getModelAttributes();
+	}
+
+	/**
+	 * Retrieves a list of models based on the current search/filter conditions.
+	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
+	 */
+	public function search()
+	{
+		// Warning: Please modify the following code to remove attributes that
+		// should not be searched.
+
+		$criteria=new CDbCriteria;
+
+                $strings=$this->datahelper->getModelSearch();
+                foreach($strings as $str){
+                   //explode params
+                   $params=explode(",",$str->params);
+                   if($str->method=="compare"){
+                      $name=trim($params[0]);
+                      if(isset($params[1]))
+                      $criteria->compare($name,$this->$name,trim($params[1]));
+                      else
+                        $criteria->compare($name,$this->$name); 
+                   }
+                }
+                
+		return new CActiveDataProvider($this, array(
+			'criteria'=>$criteria,
+		));
+	}
+        
+         function __call($method,$args){
+           
+            if($method=="getLink"){
+               
+                ServiceComponent::getValue($this,$args);
+            }
+           
+        }
+        
+         public function behaviors()
+        {
+            return array(
+                'LoggableBehavior'=>
+                        'application.modules.auditTrail.behaviors.LoggableBehavior',
+            );
+        }
+        
+        public function getAjaxButtons(){
+            
+           $model = "Module";
+           $gridid = $model."_hybridgrid";
+           $update = "";
+           $view = "";
+           $delete = "";
+           $update_url = Yii::app()->createAbsoluteUrl("configuration/automated/update");
+           $hybridgridid = "hybridgrid-".$gridid; 
+           $update_view = $model."_form";
+           $view_url = Yii::app()->createAbsoluteUrl("configuration/automated/view");
+          
+           $delete_url = Yii::app()->createAbsoluteUrl("configuration/automated/delete");
+               
+           
+           //get view id
+           $viewObject=Views::model()->findByAttributes(array('gridid'=>$gridid));
+           if($viewObject){
+               $authorizer = new AuthorizationComponent;
+
+               
+               if($authorizer->authorize($viewObject->id, "edit")){
+                   $update = CHtml::link(CHtml::image("images/update.png","update"),"#hybrid", array('onClick'=>"$(\"#audit-id\").dialog(\"open\"); hyBridGrid('$update_url','$hybridgridid','$update_view',$this->id);"));
+               }
+               
+               if($authorizer->authorize($viewObject->id, "view")){
+                   $view = CHtml::link(CHtml::image("images/view.png","view"),"#hybrid", array('onClick'=>"hyBridGrid('$view_url','$hybridgridid','$model',$this->id);"));
+               }
+               // the link that may open the dialog
+                if($authorizer->authorize($viewObject->id, "delete")){
+                     $delete = CHtml::link(CHtml::image("images/delete.png","delete"), '#', array(
+                        'onclick'=>'$("#dialog-id").dialog("open"); deleteDialogMessage("'.$delete_url.'","dialog-content","'.$model.'","'.$this->id.'"); return false;',
+                    ));
+                }
+              
+               
+
+               echo $view.$update.$delete;
+           }
+            
+        }
+}
+
