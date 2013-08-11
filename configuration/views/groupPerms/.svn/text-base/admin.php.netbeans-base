@@ -1,0 +1,80 @@
+<?php
+$this->breadcrumbs=array(
+	'Group Perms'=>array('index'),
+	'Manage',
+);
+
+
+
+$filter=array();
+if(isset($model_id)){
+    if(is_array($model_id)){
+        if(array_key_exists('view_id', $model_id)){
+        $filter=array('view_id'=>$model_id['view_id']);
+        }
+        else{   
+            $filter=array('portlet_id'=>$model_id['portlet_id']);
+           
+        }
+    }
+    else{
+        $filter=array('model_id'=>$model_id);
+    }
+}
+
+  
+$this->service=new ServiceComponent($this,"GroupPerms");
+$this->service->showHybridGridView("Manage Group Perms","GroupPerms_hybridgrid", $filter);
+
+
+//show portlets for this service
+/*
+$this->portlet[]=array(
+    array('label'=>'Add GroupPerms', 
+          'url'=>array("automated/create",
+                        'view'=>'GroupPerms_form'),
+          'linkOptions'=>array('style'=>'cursor: pointer; text-decoration: none;','class'=>'update-dialog-create')),
+           
+    //array('label'=>'List Group Perms', 'url'=>array("index")),
+);
+array_push($this->portlet_title,"Operations");
+//array_push($this->portlet_render,"portlet_full");
+ * 
+ */
+
+
+$this->beginWidget('zii.widgets.jui.CJuiDialog', array( // the dialog
+    'id'=>'GroupPerms-dialog-id',
+    'options'=>array(
+        'title'=>'Create Grades',
+        'autoOpen'=>false,
+        'modal'=>true,
+        'width'=>550,
+        'height'=>470,
+    ),
+));
+
+
+?>
+<div class="divForForm"></div>
+
+<?php
+  $this->endWidget();  ?>
+
+
+<script type="text/javascript">
+jQuery( function($){
+    $( 'a.update-dialog-create' ).bind( 'click', function( e ){
+      e.preventDefault();
+      $( '#GroupPerms-dialog-id' ).children( ':eq(0)' ).empty();
+      getUpdateDialog( $( this ).attr( 'href' ),'GroupPerms_form','GroupPerms-dialog-id' );
+      $( '#GroupPerms-dialog-id' )
+        .dialog( { title: 'Create' } )
+        .dialog( 'open' );
+    });
+});
+
+</script>
+
+
+

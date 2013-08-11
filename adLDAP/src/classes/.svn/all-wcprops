@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/main/!svn/ver/2021/hivsti/branch/protected/components/adLDAP/src/classes
+END
+adLDAPContacts.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/main/!svn/ver/2021/hivsti/branch/protected/components/adLDAP/src/classes/adLDAPContacts.php
+END
+adLDAPFolders.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/main/!svn/ver/2021/hivsti/branch/protected/components/adLDAP/src/classes/adLDAPFolders.php
+END
+adLDAPGroups.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/main/!svn/ver/2021/hivsti/branch/protected/components/adLDAP/src/classes/adLDAPGroups.php
+END
+adLDAPUtils.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/main/!svn/ver/2021/hivsti/branch/protected/components/adLDAP/src/classes/adLDAPUtils.php
+END
+adLDAPComputers.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/main/!svn/ver/2021/hivsti/branch/protected/components/adLDAP/src/classes/adLDAPComputers.php
+END
+adLDAPUsers.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/main/!svn/ver/2021/hivsti/branch/protected/components/adLDAP/src/classes/adLDAPUsers.php
+END
+adLDAPExchange.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/main/!svn/ver/2021/hivsti/branch/protected/components/adLDAP/src/classes/adLDAPExchange.php
+END

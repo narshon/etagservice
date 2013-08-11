@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/configuration/!svn/ver/21/branch/configuration/views/portlets
+END
+_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/configuration/!svn/ver/9/branch/configuration/views/portlets/_view.php
+END
+view.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/configuration/!svn/ver/9/branch/configuration/views/portlets/view.php
+END
+_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/configuration/!svn/ver/9/branch/configuration/views/portlets/_form.php
+END
+update.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/configuration/!svn/ver/9/branch/configuration/views/portlets/update.php
+END
+create.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/configuration/!svn/ver/9/branch/configuration/views/portlets/create.php
+END
+_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/configuration/!svn/ver/9/branch/configuration/views/portlets/_search.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/configuration/!svn/ver/9/branch/configuration/views/portlets/index.php
+END
+admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/configuration/!svn/ver/21/branch/configuration/views/portlets/admin.php
+END

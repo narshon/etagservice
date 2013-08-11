@@ -1,0 +1,82 @@
+10
+
+dir
+53
+http://baraza:81/svn/configuration/branch/configuration/views
+http://baraza:81/svn/configuration
+
+
+
+2013-03-20T13:50:41.525043Z
+21
+nngao
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+16ada899-7a1f-a94e-af01-9fc739210e15
+
+groups
+dir
+
+viewDetails
+dir
+
+modelRelations
+dir
+
+automated
+dir
+
+default
+dir
+
+module
+dir
+
+modelSearch
+dir
+
+skipPatterns
+dir
+
+views
+dir
+
+modelValidations
+dir
+
+webservice
+dir
+
+viewElementOptions
+dir
+
+service
+dir
+
+layouts
+dir
+
+groupPerms
+dir
+
+modelDetails
+dir
+
+permissions
+dir
+
+portlets
+dir
+

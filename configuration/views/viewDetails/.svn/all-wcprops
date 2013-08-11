@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/configuration/!svn/ver/21/branch/configuration/views/viewDetails
+END
+_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/configuration/!svn/ver/5/branch/configuration/views/viewDetails/_view.php
+END
+view.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/configuration/!svn/ver/5/branch/configuration/views/viewDetails/view.php
+END
+_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/configuration/!svn/ver/5/branch/configuration/views/viewDetails/_form.php
+END
+update.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/configuration/!svn/ver/5/branch/configuration/views/viewDetails/update.php
+END
+create.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/configuration/!svn/ver/5/branch/configuration/views/viewDetails/create.php
+END
+_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/configuration/!svn/ver/5/branch/configuration/views/viewDetails/_search.php
+END
+demo.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/configuration/!svn/ver/5/branch/configuration/views/viewDetails/demo.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/configuration/!svn/ver/5/branch/configuration/views/viewDetails/index.php
+END
+admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/configuration/!svn/ver/21/branch/configuration/views/viewDetails/admin.php
+END

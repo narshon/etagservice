@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/configuration/!svn/ver/51/branch/configuration/components
+END
+DataHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/configuration/!svn/ver/39/branch/configuration/components/DataHelper.php
+END
+CMonkForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/configuration/!svn/ver/3/branch/configuration/components/CMonkForm.php
+END
+CDbMetaTestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/configuration/!svn/ver/21/branch/configuration/components/CDbMetaTestCase.php
+END
+SkipPatternizer.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/configuration/!svn/ver/3/branch/configuration/components/SkipPatternizer.php
+END
+LdapUserGroups.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/configuration/!svn/ver/3/branch/configuration/components/LdapUserGroups.php
+END
+PortletGenerator.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/configuration/!svn/ver/3/branch/configuration/components/PortletGenerator.php
+END
+AuthorizationComponent.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/configuration/!svn/ver/21/branch/configuration/components/AuthorizationComponent.php
+END
+ServiceComponent.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/configuration/!svn/ver/54/branch/configuration/components/ServiceComponent.php
+END
+WidgetHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/configuration/!svn/ver/43/branch/configuration/components/WidgetHelper.php
+END
+DataPortlet.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/configuration/!svn/ver/43/branch/configuration/components/DataPortlet.php
+END
+CMonkEventManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/configuration/!svn/ver/43/branch/configuration/components/CMonkEventManager.php
+END
+CMonkFormInputElement.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/configuration/!svn/ver/3/branch/configuration/components/CMonkFormInputElement.php
+END

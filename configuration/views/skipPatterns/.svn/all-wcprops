@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/configuration/!svn/ver/21/branch/configuration/views/skipPatterns
+END
+_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/configuration/!svn/ver/3/branch/configuration/views/skipPatterns/_view.php
+END
+view.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/configuration/!svn/ver/3/branch/configuration/views/skipPatterns/view.php
+END
+_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/configuration/!svn/ver/3/branch/configuration/views/skipPatterns/_form.php
+END
+update.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/configuration/!svn/ver/3/branch/configuration/views/skipPatterns/update.php
+END
+create.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/configuration/!svn/ver/3/branch/configuration/views/skipPatterns/create.php
+END
+_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/configuration/!svn/ver/3/branch/configuration/views/skipPatterns/_search.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/configuration/!svn/ver/3/branch/configuration/views/skipPatterns/index.php
+END
+admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/configuration/!svn/ver/21/branch/configuration/views/skipPatterns/admin.php
+END

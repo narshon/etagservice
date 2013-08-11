@@ -1,0 +1,83 @@
+10
+
+dir
+53
+http://baraza:81/svn/configuration/branch/configuration
+http://baraza:81/svn/configuration
+
+
+
+2013-07-29T11:54:41.302122Z
+51
+kmagua
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+16ada899-7a1f-a94e-af01-9fc739210e15
+
+models
+dir
+
+ConfigurationModule.php
+file
+
+
+
+
+2012-11-16T13:51:22.478220Z
+23936de88d24e8c5810f2da445c59d27
+2012-11-16T13:49:48.694223Z
+3
+nkihuha
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+742
+
+components
+dir
+
+controllers
+dir
+
+nbproject
+dir
+
+widgets
+dir
+
+messages
+dir
+
+views
+dir
+

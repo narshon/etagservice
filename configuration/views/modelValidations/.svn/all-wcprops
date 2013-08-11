@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/configuration/!svn/ver/21/branch/configuration/views/modelValidations
+END
+_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/configuration/!svn/ver/3/branch/configuration/views/modelValidations/_view.php
+END
+view.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/configuration/!svn/ver/3/branch/configuration/views/modelValidations/view.php
+END
+_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/configuration/!svn/ver/3/branch/configuration/views/modelValidations/_form.php
+END
+update.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/configuration/!svn/ver/3/branch/configuration/views/modelValidations/update.php
+END
+create.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/configuration/!svn/ver/3/branch/configuration/views/modelValidations/create.php
+END
+_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/configuration/!svn/ver/3/branch/configuration/views/modelValidations/_search.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/configuration/!svn/ver/3/branch/configuration/views/modelValidations/index.php
+END
+admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/configuration/!svn/ver/21/branch/configuration/views/modelValidations/admin.php
+END

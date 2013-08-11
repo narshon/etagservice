@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/configuration/!svn/ver/21/branch/configuration/views/groupPerms
+END
+_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/configuration/!svn/ver/3/branch/configuration/views/groupPerms/_view.php
+END
+view.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/configuration/!svn/ver/3/branch/configuration/views/groupPerms/view.php
+END
+_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/configuration/!svn/ver/3/branch/configuration/views/groupPerms/_form.php
+END
+update.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/configuration/!svn/ver/3/branch/configuration/views/groupPerms/update.php
+END
+create.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/configuration/!svn/ver/3/branch/configuration/views/groupPerms/create.php
+END
+_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/configuration/!svn/ver/3/branch/configuration/views/groupPerms/_search.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/configuration/!svn/ver/3/branch/configuration/views/groupPerms/index.php
+END
+admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/configuration/!svn/ver/21/branch/configuration/views/groupPerms/admin.php
+END

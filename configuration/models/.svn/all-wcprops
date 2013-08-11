@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/configuration/!svn/ver/47/branch/configuration/models
+END
+Views.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/configuration/!svn/ver/44/branch/configuration/models/Views.php
+END
+ModelValidations.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/configuration/!svn/ver/4/branch/configuration/models/ModelValidations.php
+END
+ViewElementOptions.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/configuration/!svn/ver/54/branch/configuration/models/ViewElementOptions.php
+END
+Service.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/configuration/!svn/ver/44/branch/configuration/models/Service.php
+END
+GroupPerms.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/configuration/!svn/ver/3/branch/configuration/models/GroupPerms.php
+END
+ModelDetails.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/configuration/!svn/ver/4/branch/configuration/models/ModelDetails.php
+END
+Permissions.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/configuration/!svn/ver/3/branch/configuration/models/Permissions.php
+END
+Portlets.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/configuration/!svn/ver/6/branch/configuration/models/Portlets.php
+END
+UserGroups.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/configuration/!svn/ver/21/branch/configuration/models/UserGroups.php
+END
+Groups.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/configuration/!svn/ver/3/branch/configuration/models/Groups.php
+END
+ViewDetails.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/configuration/!svn/ver/39/branch/configuration/models/ViewDetails.php
+END
+ModelRelations.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/configuration/!svn/ver/4/branch/configuration/models/ModelRelations.php
+END
+Module.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/configuration/!svn/ver/3/branch/configuration/models/Module.php
+END
+ModelSearch.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/configuration/!svn/ver/4/branch/configuration/models/ModelSearch.php
+END
+SkipPatterns.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/configuration/!svn/ver/4/branch/configuration/models/SkipPatterns.php
+END

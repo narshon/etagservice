@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/configuration/!svn/ver/21/branch/configuration/controllers
+END
+ModuleController.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/configuration/!svn/ver/21/branch/configuration/controllers/ModuleController.php
+END
+ModelSearchController.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/configuration/!svn/ver/21/branch/configuration/controllers/ModelSearchController.php
+END
+SkipPatternsController.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/configuration/!svn/ver/21/branch/configuration/controllers/SkipPatternsController.php
+END
+ViewsController.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/configuration/!svn/ver/21/branch/configuration/controllers/ViewsController.php
+END
+ModelValidationsController.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/configuration/!svn/ver/21/branch/configuration/controllers/ModelValidationsController.php
+END
+WebServiceController.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/configuration/!svn/ver/3/branch/configuration/controllers/WebServiceController.php
+END
+ViewElementOptionsController.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/configuration/!svn/ver/21/branch/configuration/controllers/ViewElementOptionsController.php
+END
+ServiceController.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/configuration/!svn/ver/21/branch/configuration/controllers/ServiceController.php
+END
+GroupPermsController.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/configuration/!svn/ver/21/branch/configuration/controllers/GroupPermsController.php
+END
+ModelDetailsController.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/configuration/!svn/ver/21/branch/configuration/controllers/ModelDetailsController.php
+END
+PermissionsController.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/configuration/!svn/ver/21/branch/configuration/controllers/PermissionsController.php
+END
+PortletsController.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/configuration/!svn/ver/21/branch/configuration/controllers/PortletsController.php
+END
+GroupsController.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/configuration/!svn/ver/21/branch/configuration/controllers/GroupsController.php
+END
+ViewDetailsController.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/configuration/!svn/ver/21/branch/configuration/controllers/ViewDetailsController.php
+END
+ModelRelationsController.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/configuration/!svn/ver/21/branch/configuration/controllers/ModelRelationsController.php
+END
+AutomatedController.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/configuration/!svn/ver/21/branch/configuration/controllers/AutomatedController.php
+END
+DefaultController.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/configuration/!svn/ver/3/branch/configuration/controllers/DefaultController.php
+END
