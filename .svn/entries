@@ -10,9 +10,9 @@ http://baraza:81/svn/configuration
 2013-07-29T12:06:55.870972Z
 52
 kmagua
-
-
-
+has-props
+has-prop-mods
+svn:special svn:externals svn:needs-lock
 
 
 
@@ -59,40 +59,6 @@ nkihuha
 
 
 2257
-
-LoginForm.php
-file
-
-
-
-
-2013-05-14T11:21:30.399615Z
-349345ad75ceebc5b49f1f4680f18f98
-2013-05-17T07:02:55.985654Z
-40
-nngao
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2624
 
 GdImage.php
 file
@@ -162,11 +128,39 @@ nkihuha
 
 4015
 
-config
-dir
-
-nbproject
-dir
+LoginForm.php
+file
+
+
+
+
+2013-05-14T11:21:30.399615Z
+349345ad75ceebc5b49f1f4680f18f98
+2013-05-17T07:02:55.985654Z
+40
+nngao
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2624
 
 MetaActiveRecord.php
 file
@@ -202,9 +196,6 @@ nkihuha
 
 2525
 
-configuration
-dir
-
 UserIdentity_OLD.php
 file
 
@@ -238,4 +229,13 @@ nngao
 
 
 3405
+
+config
+dir
+
+configuration
+dir
+
+nbproject
+dir
 

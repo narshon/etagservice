@@ -37,8 +37,11 @@ class ServiceController extends Controller
 	{       
                  //show portlets for this school
                  $this->service=new ServiceComponent($this,"service",METADB_DB);
-                 $this->service->showAll();
-                 $this->service->show();
+                 //$this->service->showAll();
+                 //$this->service->show();
+                 
+                 //manual portlets
+                Service::model()->showManualPortlets($this);
                 
                  $ldapgroup=new LdapGroup();  
                  $adminusers=array();
@@ -55,7 +58,7 @@ class ServiceController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','getservice', 'getviewdetails','getservicetabs', 'getviewtabs','getpermstab'),
+				'actions'=>array('create','update','getservice', 'getviewdetails','getservicetabs', 'getviewtabs','getpermstab','main'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -66,6 +69,19 @@ class ServiceController extends Controller
 				'users'=>array('*'),
 			),
 		);
+	}
+        
+        public function actionMain($id=1,$section='service')
+	{        
+                
+		$model=new Service('search');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['Service']))
+			$model->attributes=$_GET['Service'];
+
+		$this->render('admin',array(
+			'model'=>$model,'module_id'=>$id,'section'=>$section,
+		));
 	}
 
 	/**

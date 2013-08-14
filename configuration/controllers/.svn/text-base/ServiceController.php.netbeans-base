@@ -36,7 +36,7 @@ class ServiceController extends Controller
 	public function accessRules()
 	{       
                  //show portlets for this school
-                 $this->service=new ServiceComponent($this,"service");
+                 $this->service=new ServiceComponent($this,"service",METADB_DB);
                  $this->service->showAll();
                  $this->service->show();
                 
